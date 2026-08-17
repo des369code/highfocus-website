@@ -35,16 +35,19 @@ export default function Footer() {
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/services">Services</Link></li>
             <li><Link href="/programmes">Programmes</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
+            <li><Link href="/clients">Clients &amp; Testimonials</Link></li>
+            <li><Link href="/templates">Compliance Templates</Link></li>
           </ul>
         </div>
 
         <div>
           <h4>Tools</h4>
           <ul>
-            <li><Link href="/contact?type=booking">Book Training</Link></li>
-            <li><Link href="/contact">Free Self-Assessment</Link></li>
-            <li><Link href="/contact">HRD Corp Levy Calculator</Link></li>
+            <li><Link href="/assessment">OSH Self-Assessment</Link></li>
+            <li><Link href="/calculator">HRD Corp Levy Calculator</Link></li>
+            <li><Link href="/booking">Book Training</Link></li>
+            <li><Link href="/login">Log in</Link></li>
+            <li><Link href="/register">Register</Link></li>
           </ul>
         </div>
 

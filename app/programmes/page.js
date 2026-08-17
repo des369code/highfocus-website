@@ -68,7 +68,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "leadership",
+    id: "lead",
     tag: "LEADERSHIP",
     title: "Leadership & Management",
     desc: "Build the leaders who set the tone and the teams that follow.",
@@ -83,7 +83,7 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "compliance",
+    id: "comp",
     tag: "ACT 514",
     title: "Compliance & Legislation",
     desc: "Know your duties under Act 514, and build the culture to meet them.",
@@ -139,7 +139,7 @@ export default function Programmes() {
                     <li>HRD Corp claimable</li>
                   </ul>
                   <Link
-                    href={`/contact?type=booking&course=${encodeURIComponent(p.name)}`}
+                    href={`/booking?course=${encodeURIComponent(p.name)}`}
                     className="pillar__link"
                   >
                     Book this programme
@@ -208,7 +208,7 @@ export default function Programmes() {
                         <div className="prog-item__meta">{meta}</div>
                       </div>
                       <Link
-                        href={`/contact?type=booking&course=${encodeURIComponent(name)}`}
+                        href={`/booking?course=${encodeURIComponent(name)}`}
                         className="prog-item__book"
                       >
                         Enquire →
@@ -225,7 +225,7 @@ export default function Programmes() {
               <p style={{ color: "var(--steel-dim)", fontFamily: "var(--font-mono)", fontSize: "0.74rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20 }}>
                 Need something not listed? Programmes are custom-built for your operations.
               </p>
-              <Link href="/contact?type=booking" className="btn btn--primary btn--lg">
+              <Link href="/booking" className="btn btn--primary btn--lg">
                 Request a proposal
                 {Icons.arrow}
               </Link>

@@ -96,7 +96,7 @@ export function CTABand() {
                 HRD Corp claim support.
               </p>
             </div>
-            <Link href="/contact?type=booking" className="btn btn--primary btn--lg">
+            <Link href="/booking" className="btn btn--primary btn--lg">
               Book a Training
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" width="16" height="16">
                 <path d="M5 12h14M13 6l6 6-6 6" />

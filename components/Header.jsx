@@ -10,6 +10,11 @@ const NAV = [
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
   { href: "/programmes", label: "Programmes" },
+  { href: "/clients", label: "Clients" },
+  { href: "/calendar", label: "Calendar" },
+  { href: "/templates", label: "Templates" },
+  { href: "/assessment", label: "Self-Assessment" },
+  { href: "/calculator", label: "Calculator" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -47,14 +52,14 @@ export default function Header() {
                 </li>
               ))}
               <li className="nav__cta">
-                <Link href="/contact?type=booking" className="btn btn--primary">
+                <Link href="/booking" className="btn btn--primary">
                   Book Training
                 </Link>
               </li>
             </ul>
           </nav>
           <div className="header-cta">
-            <Link href="/contact?type=booking" className="btn btn--primary">
+            <Link href="/booking" className="btn btn--primary">
               Book Training
             </Link>
           </div>
@@ -79,7 +84,7 @@ export default function Header() {
           </Link>
         ))}
         <div className="mobile-menu__cta">
-          <Link href="/contact?type=booking" className="btn btn--primary btn--block btn--lg" onClick={() => setOpen(false)}>
+          <Link href="/booking" className="btn btn--primary btn--block btn--lg" onClick={() => setOpen(false)}>
             Book Training
           </Link>
         </div>

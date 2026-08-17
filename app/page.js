@@ -29,7 +29,7 @@ const PILLARS = [
       "Team Building (A-Team!)",
       "Managing Negative Culture",
     ],
-    href: "/programmes#leadership",
+    href: "/programmes#lead",
   },
   {
     tag: "DOSH · DOE",
@@ -54,7 +54,7 @@ const PILLARS = [
       "Accident Prevention",
       "Behaviour-Based Safety · PPE Importance",
     ],
-    href: "/programmes#compliance",
+    href: "/programmes#comp",
   },
 ];
 
@@ -81,19 +81,19 @@ const TEMPLATES = [
     icon: Icons.doc,
     title: "HIRARC Register",
     text: "Hazard identification, risk assessment and risk control per DOSH HIRARC Guidelines 2008, with the L × S matrix included.",
-    note: "DOSH HIRARC 2008",
+    href: "/templates/hirarc",
   },
   {
     icon: Icons.doc,
     title: "Safety Committee Minutes",
     text: "Meeting minutes with attendance, matters arising and action registers, per the S&H Committee Regulations 1996.",
-    note: "S&H Regs 1996",
+    href: "/templates/committee-minutes",
   },
   {
     icon: Icons.doc,
     title: "Accident Investigation Report",
     text: "Immediate and root cause analysis with corrective actions, for accidents, near-misses and dangerous occurrences.",
-    note: "Root cause · corrective action",
+    href: "/templates/accident-investigation",
   },
 ];
 
@@ -131,7 +131,7 @@ export default function Home() {
                 Explore Programmes
                 {Icons.arrow}
               </Link>
-              <Link href="/contact" className="btn btn--ghost btn--lg">
+              <Link href="/assessment" className="btn btn--ghost btn--lg">
                 Take the Free Self-Assessment
               </Link>
             </div>
@@ -235,7 +235,7 @@ export default function Home() {
                   Answer 20 questions across policy, risk management, training and culture. Get a readiness score,
                   per-area breakdown and recommended programmes for your gaps.
                 </p>
-                <Link href="/contact" className="btn btn--primary">
+                <Link href="/assessment" className="btn btn--primary">
                   Start the Assessment
                 </Link>
               </div>
@@ -249,7 +249,7 @@ export default function Home() {
                   Input your headcount and monthly payroll to see your monthly and annual levy, the rate that
                   applies to you, and how much of it your training can claim back.
                 </p>
-                <Link href="/contact" className="btn btn--primary">
+                <Link href="/calculator" className="btn btn--primary">
                   Calculate Your Levy
                 </Link>
               </div>
@@ -270,7 +270,7 @@ export default function Home() {
                   <Link href="/programmes" className="btn btn--ghost">
                     View all 33+ programmes
                   </Link>
-                  <Link href="/contact?type=booking" className="btn btn--primary">
+                  <Link href="/calendar" className="btn btn--primary">
                     {Icons.clock}
                     Training Calendar
                   </Link>
@@ -282,7 +282,7 @@ export default function Home() {
             {COURSES.map((c, i) => (
               <Reveal key={c.name} delay={i * 40}>
                 <div className="course-row">
-                  <Link href={`/contact?type=booking&course=${encodeURIComponent(c.name)}`}>
+                  <Link href={`/booking?course=${encodeURIComponent(c.name)}`}>
                     <span className="course-row__name">
                       {c.name}
                       <small>{c.meta}</small>
@@ -316,7 +316,7 @@ export default function Home() {
               eyebrow="Free resources"
               title="Compliance templates, free to download"
               actions={
-                <Link href="/contact" className="btn btn--ghost">
+                <Link href="/templates" className="btn btn--ghost">
                   Browse all templates
                 </Link>
               }
@@ -330,8 +330,8 @@ export default function Home() {
                   <h3>{t.title}</h3>
                   <p>{t.text}</p>
                   <div className="template-card__actions">
-                    <Link href="/contact" className="btn btn--ghost">
-                      Request a copy
+                    <Link href={t.href} className="btn btn--ghost">
+                      Open template
                     </Link>
                   </div>
                 </div>

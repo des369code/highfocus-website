@@ -129,7 +129,7 @@ export default function Services() {
                       <div className="prog-item__meta">{meta}</div>
                     </div>
                     <Link
-                      href={`/contact?type=booking&course=${encodeURIComponent(name)}`}
+                      href={`/booking?course=${encodeURIComponent(name)}`}
                       className="prog-item__book"
                     >
                       Enquire →

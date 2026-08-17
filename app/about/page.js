@@ -178,7 +178,7 @@ export default function About() {
             ))}
           </div>
           <div style={{ marginTop: 48, textAlign: "center" }}>
-            <Link href="/contact?type=booking" className="btn btn--primary btn--lg">
+            <Link href="/booking" className="btn btn--primary btn--lg">
               Talk to our team
             </Link>
           </div>
